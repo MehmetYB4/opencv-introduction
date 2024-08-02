@@ -28,19 +28,19 @@ cv.waitKey(0)
 # norm_INF
 dst_inf = np.zeros(gray.shape, dtype=np.float32)
 cv.normalize(gray, dst=dst_inf, alpha=0, beta=1.0, norm_type=cv.NORM_INF)
-cv.imshow("Normalized INF", dst_inf)
+cv.imshow("INF", dst_inf)
 cv.waitKey(0)
 
 # norm_L1
 dst_l1 = np.zeros(gray.shape, dtype=np.float32)
 cv.normalize(gray, dst=dst_l1, alpha=0, beta=1.0, norm_type=cv.NORM_L1)
-cv.imshow("Normalized L1", dst_l1)
+cv.imshow("L1", dst_l1)
 cv.waitKey(0)
 
 # norm_L2
 dst_l2 = np.zeros(gray.shape, dtype=np.float32)
 cv.normalize(gray, dst=dst_l2, alpha=0, beta=1.0, norm_type=cv.NORM_L2)
-cv.imshow("Normalized L2", dst_l2)
+cv.imshow("L2", dst_l2)
 cv.waitKey(0)
 
 cv.destroyAllWindows()
